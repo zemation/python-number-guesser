@@ -19,7 +19,7 @@ def get_user_guess():
   else:
     try:
       guess = int(guess)
-      if (guess < 0) or (guess > 20):
+      if (guess <= 0) or (guess > 20):
         get_user_guess()
       else:
         if (guess > random_number):
